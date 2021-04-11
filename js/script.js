@@ -22,7 +22,7 @@ $(function() {
     for (var i = 0; i < cards.length; i++) {
         html += '<div class="cards" data-name="' + cards[i] + '" onclick="flip(this)"><div class="back"><img src="img/' + cards[i] + '"/></div><div class="front"><img src="img/back.png"/></div></div>';
     }
-    $('#grid').html(html);
+    $('.grid').html(html);
 });
 
 function start() {
