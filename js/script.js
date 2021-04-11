@@ -1,4 +1,4 @@
-var cards = ["anh1.png", "anh2.png", "anh3.png", "anh4.png", "anh5.png", "anh6.png", "anh7.png", "anh8.png", "anh9.png"];
+var cards = ["card1.png", "card2.png", "card3.png", "card4.png", "card5.png", "card6.png", "card7.png", "card8.png", "card9.png"];
 var current = null;
 var count = 0;
 var run = null;
