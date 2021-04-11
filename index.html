@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Memory Card Game</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="play-btn">
+            <img class="btn play" src="img/play.png" onclick="start()">
+        </div>
+
+        <div id="timeFrame">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="grid"></div>
+
+        <div id="cover"></div>
+
+        <div class="result">
+            <img src="img/victory.png" class="win">
+            <img src="img/defeat.png" class="lose">
+
+        </div>
+        <div class="continue-btn">
+            <img src="img/continue.png" onclick="replay()" class="btn continue">
+        </div>
+
+    </div>
+
+    <audio id="victory">
+		<source src="audio/victory.mp3" type="audio/mpeg">
+	</audio>
+    <audio id="defeat">
+		<source src="audio/defeat.mp3" type="audio/mpeg">
+	</audio>
+    <audio id="correct">
+		<source src="audio/correct.mp3" type="audio/mpeg">
+	</audio>
+    <audio id="wrong">
+		<source src="audio/wrong.mp3" type="audio/mpeg">
+	</audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

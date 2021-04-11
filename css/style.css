@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../img/bg1.jpg") no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+#grid {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(9, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.cards {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.cards .back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flip .back {
+    transform: rotateY(0deg);
+}
+
+.flip .front {
+    transform: rotateY(180deg);
+}
+
+.cards .front,
+.cards .back {
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+
+.cards img {
+    height: 240px;
+    width: 170px;
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: translate(0, -10px);
+    cursor: pointer;
+}
+
+.play-btn {
+    display: grid;
+    position: absolute;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.play {
+    width: 300px;
+    z-index: 2;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#timeFrame {
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    border-radius: 6px;
+    padding: 3px;
+    opacity: 0;
+}
+
+#progressBar {
+    width: 100%;
+    height: 20px;
+    background-color: #2c9e20;
+    border-radius: 4px;
+    transition: 1s linear;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+}
+
+.win {
+    height: 750px;
+    width: 1000px;
+    position: absolute;
+    top: -1000px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.lose {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: -1000px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.continue-btn {
+    position: relative;
+    justify-content: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.continue {
+    width: 300px;
+    z-index: 2;
+}
+
+.hidden {
+    opacity: 0;
+}
