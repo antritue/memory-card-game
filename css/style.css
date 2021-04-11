@@ -139,7 +139,7 @@ img:hover {
     opacity: 0;
 }
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1500px) {
     .grid {
         grid: repeat(3, 1fr) / repeat(6, 1fr);
     }
