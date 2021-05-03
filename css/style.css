@@ -12,7 +12,7 @@ body {
     display: grid;
     grid: repeat(2, 1fr) / repeat(9, 1fr);
     justify-items: center;
-    grid-gap: 20px;
+    grid-row-gap: 20px;
     width: 90%;
     margin: auto;
     padding-top: 10%;
@@ -46,7 +46,7 @@ body {
 
 .cards img {
     height: 100%;
-    width: 90%;
+    width: 100%;
     transition: all 0.3s ease-in-out;
 }
 
